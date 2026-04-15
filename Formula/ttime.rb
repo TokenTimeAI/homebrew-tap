@@ -7,22 +7,22 @@ class Ttime < Formula
   on_macos do
     on_arm do
       url "https://github.com/TokenTimeAI/client/releases/download/v#{version}/ttime_darwin_arm64"
-      sha256 "76530c2f4b7dccd8aab31076f180b403a5ae547fbadf687ea2656169cb05a62b"
+      sha256 "ea5831a92ced7d851f042d4d5c8bec3cded7c7cf3bf0d2f62133b11c4c0e22e8"
     end
     on_intel do
       url "https://github.com/TokenTimeAI/client/releases/download/v#{version}/ttime_darwin_amd64"
-      sha256 "600b9985d3a528a4706e95e645232f0797dc505ab8b56a057e61e9d947e9663b"
+      sha256 "d43eb6207cfc6d77ba6f58617b93034a5c9f9d9d0d5cb258b864c012c667a0b5"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/TokenTimeAI/client/releases/download/v#{version}/ttime_linux_arm64"
-      sha256 "06ed5ec99d8b2ed86a8a45717be99b5b0774b58c427fe072199a5aff682f8874"
+      sha256 "d95308198b64233b938aa11dcba7c8b422ee0439074ee4eb75ee45be20d10cde"
     end
     on_intel do
       url "https://github.com/TokenTimeAI/client/releases/download/v#{version}/ttime_linux_amd64"
-      sha256 "cc8c51470c7ace076b21ab47e5b3778b06ab2b3172b1c7773e75bf546f397292"
+      sha256 "282981260308c2acdc1b0aac93cfe043d39baf3d9d6c29938f0bc30b008d2e8e"
     end
   end
 

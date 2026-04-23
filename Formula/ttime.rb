@@ -27,7 +27,7 @@ class Ttime < Formula
   end
 
   def install
-    bin.install Dir.glob("ttime_*").first => "ttime"
+    bin.install "ttime"
   end
 
   service do

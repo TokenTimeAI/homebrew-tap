@@ -1,28 +1,28 @@
 class Ttime < Formula
   desc "Local heartbeat daemon client for ttime.ai"
   homepage "https://ttime.ai"
-  version "0.1.6"
+  version "0.1.7"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/TokenTimeAI/client/releases/download/v#{version}/ttime_Darwin_arm64.tar.gz"
-      sha256 "3773d6fc740c12fe5d305e3e5b37f970a2041507ae13261c68c275f7f6cda713"
+      sha256 "681fecbeac825b252f07acc27972a21b0ab8b8a8e56fc9911fca7ea36bc4ef6d"
     end
     on_intel do
       url "https://github.com/TokenTimeAI/client/releases/download/v#{version}/ttime_Darwin_x86_64.tar.gz"
-      sha256 "51bbd15ea90d9d0419bf2d780eea1d2c22194e00b62ea9575d8824844f2a239b"
+      sha256 "54eb3ba23d23beda7f8403b124be6b17c0cb3f9b394a39b1d000ad3564472969"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/TokenTimeAI/client/releases/download/v#{version}/ttime_Linux_arm64.tar.gz"
-      sha256 "b6f6baf7ff0f03a3ffc43697f80dfd8e46db5bcfb51a091ee3b2dc7088d7a4dd"
+      sha256 "f0ff9c0e7f6ab6e0edc32423d1686783b5c44a7486f634b26df82921cce7cf2b"
     end
     on_intel do
       url "https://github.com/TokenTimeAI/client/releases/download/v#{version}/ttime_Linux_x86_64.tar.gz"
-      sha256 "05d41f2551cd3ff4ffee8b997547c10d6260d60b3ba98f22f9366bfd6801e411"
+      sha256 "2b30232b990c711bf68c1fd505fd85e8418171a1e814e8900e6d1a1c7c7049c4"
     end
   end
 

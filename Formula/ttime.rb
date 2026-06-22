@@ -5,21 +5,21 @@
 class Ttime < Formula
   desc "Local heartbeat daemon client for ttime.ai"
   homepage "https://ttime.ai"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tokentimeai/client/releases/download/v0.1.10/ttime_Darwin_x86_64.tar.gz"
-      sha256 "dfc6377a101146adbd65f6705fc4755ee27ed521c1e88673b7437aaf5f1ab885"
+      url "https://github.com/tokentimeai/client/releases/download/v0.1.11/ttime_Darwin_x86_64.tar.gz"
+      sha256 "d3a224690806885a67136f76b3d6f6a0ddac06a67ceeb4e874c8c69d0e62db0b"
 
       define_method(:install) do
         bin.install "ttime"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tokentimeai/client/releases/download/v0.1.10/ttime_Darwin_arm64.tar.gz"
-      sha256 "011c60315b291ec0dd37d631c37ee5fd851a2feb832d6559b7f7ae26ef44c19f"
+      url "https://github.com/tokentimeai/client/releases/download/v0.1.11/ttime_Darwin_arm64.tar.gz"
+      sha256 "cc2327c768fc2003e4be247a0edc5947768cf5f5785541f82e8d1dd349d2e335"
 
       define_method(:install) do
         bin.install "ttime"
@@ -29,15 +29,15 @@ class Ttime < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tokentimeai/client/releases/download/v0.1.10/ttime_Linux_x86_64.tar.gz"
-      sha256 "44b1dff3efa5b48a4ebd508cdf6f08fb9ec1457fab7e66f76989d48290603ed7"
+      url "https://github.com/tokentimeai/client/releases/download/v0.1.11/ttime_Linux_x86_64.tar.gz"
+      sha256 "9c70effa0a06d4c45c97f003d2e45e5cc38ccc68fdeee6aa563efc4d70df2eac"
       define_method(:install) do
         bin.install "ttime"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tokentimeai/client/releases/download/v0.1.10/ttime_Linux_arm64.tar.gz"
-      sha256 "c776ea0c026deb27f3b80cb2b0c4323755630813f546ebb44ebb6061f7a69dc9"
+      url "https://github.com/tokentimeai/client/releases/download/v0.1.11/ttime_Linux_arm64.tar.gz"
+      sha256 "2b8c93ad27e05bc73183f46512941011d1ae30901d0d451e3051bbfab10ea9ec"
       define_method(:install) do
         bin.install "ttime"
       end
